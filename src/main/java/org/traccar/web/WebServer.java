@@ -94,7 +94,7 @@ public class WebServer implements LifecycleObject {
             servletHandler.addServlet(new ServletHolder(new ConsoleServlet(config)), "/console/*");
         }
 
-        initWebApp(servletHandler);
+        // initWebApp(servletHandler);
 
         Handler.Sequence handlers = new Handler.Sequence();
         initClientProxy(servletHandler);
